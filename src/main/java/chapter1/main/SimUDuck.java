@@ -15,21 +15,21 @@ public class SimUDuck {
   public static void main(String[] args) {
     
     Duck redheadDuck = new RedheadDuck();
-    duckDisplay(redheadDuck);
+    displayDuck(redheadDuck);
     
     Duck mallardDuck = new MallardDuck();
-    duckDisplay(mallardDuck);
+    displayDuck(mallardDuck);
     mallardDuck.setFlyBehavior(new FlyRocketPowered());
-    duckDisplay(mallardDuck);
+    displayDuck(mallardDuck);
     
     Duck rubberDuck = new RubberDuck();
-    duckDisplay(rubberDuck);
+    displayDuck(rubberDuck);
     
     Duck decoyDuck = new DecoyDuck();
-    duckDisplay(decoyDuck);
+    displayDuck(decoyDuck);
     
     Duck dumbDuck = new DumbDuck();
-    duckDisplay(dumbDuck);
+    displayDuck(dumbDuck);
     
     DuckCall duckCall = new DuckCall();
     duckCall.display();
@@ -41,7 +41,7 @@ public class SimUDuck {
     
   }
   
-  private static void duckDisplay(Duck duck) {
+  private static void displayDuck(Duck duck) {
     duck.display();
     duck.performFly();
     duck.performQuack();
