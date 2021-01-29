@@ -1,11 +1,11 @@
-package chapter3.enums;
+package chapter4.simpleFactory.enums;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public enum CoffeeSize {
+public enum TypePizza {
 
-  TALL, GRANDE, VENTI
+  CHEESE, VEGGIE, CLAM, PEPPERONI
 
 }
